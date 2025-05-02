@@ -4,7 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +16,6 @@ body {
   min-height: 100vh;
 
 }
-
 
 #chatbot-toggler {
   position: fixed;
@@ -63,15 +61,14 @@ body {
   right: 35px;
   height: 525px;
   width: 380px;
-  transform: scale(0.2);
   background: #fff;
   overflow: hidden;
   border-radius: 15px;
+  transform: scale(0.2);
   transform-origin: bottom right;
   box-shadow: 0 0 128px 0 rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
   transition: all 0.1s ease;
-  display: flex;
-  flex-direction: column;
+  z-index: 9999;
 }
 
 .container.show-chatbot .chatbot-popup {
@@ -82,9 +79,9 @@ body {
 
 .chatbot-popup .chatbot-header {
   display: flex;
-  padding: 15px 22px;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 22px;
   color: #fff;
   background: #000;
   flex-shrink: 0;
@@ -145,8 +142,7 @@ body {
   flex-direction: column;
   gap: 20px;
   height: calc(100% - 70px);
-  padding-top: 25px;
-  padding-left: 20px;
+  padding: 25px 0 0 20px;
   overflow-y: auto;
   scrollbar-gutter: stable;
   scroll-behavior: smooth;
@@ -220,12 +216,12 @@ body {
 }
 
 .chatbot-footer {
-  position: relative; /* Remove posicionamento absoluto */
+  position: relative;
   bottom: auto;
   width: 100%;
   padding: 15px 22px 20px;
   background: #fff;
-  border-top: 1px solid rgba(0,0,0,0.05); /* Linha divisória */
+  border-top: 1px solid rgba(0,0,0,0.05);
 }
 
 .chatbot-footer .chat-form {

@@ -1,74 +1,77 @@
 .header {
-    width: 100%;
-    height: calc(100vh - 150px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    align-items: flex-start;
-    background-image: url('../src/assets/furia-header.webp');
-    background-repeat: no-repeat;
-    background-position: center 20%;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('../src/assets/furia-header.webp');
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  background-size: cover;
+  color: white;
 }
 
-.header p {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
 
 .header h1 {
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 800;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
 }
 
-.header button{
-    font-size: 1rem;
-    padding: 15px;
-    border-radius: 25px;
-    border: none;
-    background: #095ffb;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+.header p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
 }
 
-.header button:hover{
-    background: #000;
-    color: #fff;
-    transform: scale(1.05);
 
+.header button {
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  background: #095ffb;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.header button:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
 
 @media screen and (max-width: 768px) {
-    .header {
-      align-items: center;
-      text-align: center;
-      height: auto;
-      background-position: center;
-      padding: 40px 20px;
-      gap: 20px;
-    }
-
-    .header h1 {
-      font-size: 28px;
-      line-height: 1.2;
-    }
-
-    .header p {
-      font-size: 1.1rem;
-      line-height: 1.4;
-    }
-
-    .header button {
-      width: 100%;
-      max-width: 300px;
-      padding: 12px;
-      font-size: 1rem;
-    }
+  .header {
+    align-items: center;
+    text-align: center;
+    height: auto;
+    background-position: center;
+    padding: 40px 20px;
+    gap: 20px;
   }
+
+  .header h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .header p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .header button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

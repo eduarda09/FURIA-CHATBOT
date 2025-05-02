@@ -55,8 +55,8 @@ const About = () => {
           <div className="box-4" ref={addToBoxRefs}>
             <p>Conquistas</p>
             <ul>
-              <li>Valorant Champions Tour 2022: Game Changers</li>
-              <li>Campeã do VALORANT Ignition Series: Brazil (2020)</li>
+              <li>Valorant Champions Tour 2022: Game Changers.</li>
+              <li>Campeã do VALORANT Ignition Series: Brazil (2020).</li>
             </ul>
           </div>
         </div>
