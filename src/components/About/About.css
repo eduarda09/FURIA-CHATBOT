@@ -1,0 +1,217 @@
+.about-container {
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15rem;
+}
+
+.about-container h1 {
+    font-size: 6rem;
+
+}
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    color: #fff;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-areas:
+        "box-1 box-2"
+        "box-1 box-2"
+        "box-1 box-3"
+        "box-4 box-3"
+        "box-4 box-3";
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: box-1;
+    background: linear-gradient(to bottom, transparent 0%, #000 100%),
+                url('../../assets/furia-game.png') no-repeat top center / cover;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.box-1 p:first-child {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.box-1 p:last-child {
+    text-align: justify;
+    text-align-last: center;
+    hyphens: auto;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    grid-area: box-2;
+    background: #000;
+    border-radius: 25px;
+    padding: 20px;
+    transition-delay: 0.4s;
+}
+
+.box-2 p:first-child {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.box-2 p:last-child {
+    text-align: justify;
+    text-align-last: center;
+    hyphens: auto;
+}
+
+.box-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: box-3;
+    background: linear-gradient(to bottom, transparent 0%, #000 100%),
+                url('../../assets/furia-group.jpg') no-repeat top center / cover;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    color: white;
+    transition-delay: 0.6s;
+}
+
+.box-3 p:first-child {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.box-3 p:last-child {
+    text-align: justify;
+    text-align-last: center;
+    hyphens: auto;
+}
+
+.box-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: box-4;
+    background: #000;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    color: white;
+    text-align: center;
+    transition-delay: 0.8s;
+}
+
+.box-4 p {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.box-4 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.box-4 li {
+    text-align: center;
+}
+
+.box-1, .box-2, .box-3, .box-4 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition-delay: 0.2s;
+}
+
+
+.box-1.visible,
+  .box-2.visible,
+  .box-3.visible,
+  .box-4.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animated-title {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+.animated-title.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .about-container h1 {
+      font-size: 3rem;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .grid-container > div {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4 {
+      background: #000;
+      padding: 15px;
+      font-size: 1rem;
+    }
+
+    .box-1 p:first-child,
+    .box-2 p:first-child,
+    .box-3 p:first-child,
+    .box-4 p {
+      font-size: 1.3em;
+    }
+
+    .box-4 ul {
+      gap: 10px;
+      padding: 0;
+    }
+}
+
+
+
