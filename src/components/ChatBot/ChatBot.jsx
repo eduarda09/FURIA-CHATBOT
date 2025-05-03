@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import ChatForm from '../ChatForm/ChatForm';
 import ChatMessage from '../ChatMessage/ChatMessage';
 import { useChat } from '../../context/ChatContext';
-
+import LogoImage from '../../assets/furia.png';
 
 const ChatBot = () => {
       const { isChatOpen, setIsChatOpen } = useChat();
@@ -58,7 +58,7 @@ const ChatBot = () => {
         <div className="chatbot-popup">
           <div className="chatbot-header">
             <div className="header-info">
-              <img className="logo" src="../../assets/furia.png" alt="" />
+              <img className="logo" src={LogoImage} alt="Image logo of FURIA" />
               <h2 className="logo-text">FURIA ChatBot</h2>
             </div>
             <button
