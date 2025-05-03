@@ -1,7 +1,7 @@
 import React, { useRef, useEffect} from 'react';
 import './HowToUse.css';
-import Video from '../../assets/chat-video.mp4'
-import Image from '../../assets/chat.jpg'
+
+
 
 const HowToUse = () => {
   const imgRef = useRef(null);
@@ -40,7 +40,7 @@ const HowToUse = () => {
       <div className="chat-description">
         <h1>Veja o FanBot em <br/> ação!</h1>
         <video
-          src={Video}
+          src="../../assets/chat-video.mp4"
           controls
           width="600"
         ></video>
@@ -50,7 +50,7 @@ const HowToUse = () => {
           <li ref={addToRefs}><span>✔️</span> Curiosidades, estatísticas e interatividade</li>
         </ul>
       </div>
-      <img ref={imgRef} className="animated-image"  src={Image} alt="" />
+      <img ref={imgRef} className="animated-image"  src="../../assets/chat.jpg" alt="" />
     </section>
   );
 };

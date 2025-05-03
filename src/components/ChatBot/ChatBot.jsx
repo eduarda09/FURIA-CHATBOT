@@ -58,7 +58,7 @@ const ChatBot = () => {
         <div className="chatbot-popup">
           <div className="chatbot-header">
             <div className="header-info">
-              <img className="logo" src="../src/assets/furia.png" alt="" />
+              <img className="logo" src="../../assets/furia.png" alt="" />
               <h2 className="logo-text">FURIA ChatBot</h2>
             </div>
             <button
