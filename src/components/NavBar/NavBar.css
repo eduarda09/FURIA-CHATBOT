@@ -10,12 +10,10 @@
   flex-direction: row;
 }
 
-
 .logo {
   width: 95px;
   height: 70px;
 }
-
 
 .navbar-options {
   display: flex;
@@ -36,7 +34,6 @@
   padding: 8px 12px;
   border-radius: 20px;
 }
-
 
 .hamburger {
   display: none;
@@ -77,7 +74,6 @@
   top: 13.5px;
 }
 
-
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 15px 8px;
@@ -95,8 +91,9 @@
   .navbar-options {
     position: absolute;
     top: 70px;
-    left: 180px;
-    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -105,6 +102,8 @@
     padding: 20px 0;
     border-radius: 25px;
     display: none;
+    box-sizing: border-box;
+    z-index: 1000;
   }
 
   .navbar-options.open {

@@ -13,8 +13,8 @@
   background-position: center 20%;
   background-size: cover;
   color: white;
+  overflow-x: hidden; /* previne rolagem horizontal */
 }
-
 
 .header h1 {
   font-size: 3rem;
@@ -22,13 +22,11 @@
   color: #fff;
 }
 
-
 .header p {
   font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
 }
-
 
 .header button {
   font-size: 1rem;
@@ -47,7 +45,6 @@
   transform: scale(1.05);
 }
 
-
 @media screen and (max-width: 768px) {
   .header {
     align-items: center;
@@ -56,6 +53,8 @@
     background-position: center;
     padding: 40px 20px;
     gap: 20px;
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   .header h1 {
@@ -75,3 +74,4 @@
     font-size: 1rem;
   }
 }
+
