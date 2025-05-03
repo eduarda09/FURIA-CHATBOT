@@ -3,6 +3,7 @@ import '../Header/Header.css';
 import { useChat } from '../../context/ChatContext';
 
 
+
 const Header = () => {
   const { setIsChatOpen } = useChat();
   return (

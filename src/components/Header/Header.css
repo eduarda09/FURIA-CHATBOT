@@ -1,3 +1,5 @@
+
+
 .header {
   width: 100%;
   height: calc(100vh - 150px);
@@ -8,12 +10,12 @@
   gap: 15px;
   padding: 20px;
   box-sizing: border-box;
-  background-image: url('../src/assets/furia-header.webp');
+  background-image: url('../../assets/furia-header.png');
   background-repeat: no-repeat;
   background-position: center 20%;
   background-size: cover;
   color: white;
-  overflow-x: hidden; /* previne rolagem horizontal */
+  overflow-x: hidden;
 }
 
 .header h1 {

@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import '../NavBar/Navbar.css';
+import Logo from '../../assets/furia.png';
+
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <img className="logo" src="../src/assets/furia.png" alt="" />
+      <img className="logo" src={Logo} alt="Logo furia" />
 
 
       <div
