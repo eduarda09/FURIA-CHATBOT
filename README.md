@@ -13,7 +13,7 @@ Respostas Dinâmicas: As respostas do chatbot são geradas dinamicamente e podem
 
 Aparência Personalizada: O design do chatbot segue a estética da FURIA, com o uso de cores, fontes e imagens representativas do time.
 
-#Como Funciona
+# Como Funciona
 ## 1. Componentes:
 ChatBot: Componente principal que gerencia o estado de abertura/fechamento do chatbot, o histórico de mensagens e a comunicação com a API.
 
